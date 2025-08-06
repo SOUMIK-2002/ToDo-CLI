@@ -1,0 +1,73 @@
+To-Do List Application(Console-based)
+
+PS C:\Users\abc\Desktop\python> & C:/Users/abc/AppData/Local/Programs/Python/Python313/python.exe c:/Users/abc/Desktop/python/todo.py
+
+Choose an option:
+1. View Tasks
+2. Add Task
+3. Remove Task
+4. Exit
+Enter your choice (1-4): 1
+
+--- TO-DO LIST ---
+No tasks found.   
+
+Choose an option:
+1. View Tasks
+2. Add Task
+3. Remove Task
+4. Exit
+Enter your choice (1-4): 2
+Enter a new task: complete calculator CLI App task using python
+Task added successfully.
+
+Choose an option:
+1. View Tasks
+2. Add Task
+3. Remove Task
+4. Exit
+Enter your choice (1-4): 2
+Enter a new task: complete python To-Do app
+Task added successfully.
+
+Choose an option:
+1. View Tasks
+2. Add Task
+3. Remove Task
+4. Exit
+Enter your choice (1-4): 1                 
+
+--- TO-DO LIST ---
+1. complete calculator CLI App task using python
+2. complete python To-Do app
+
+Choose an option:
+1. View Tasks
+2. Add Task
+3. Remove Task
+4. Exit
+Enter your choice (1-4): 3
+
+--- TO-DO LIST ---
+1. complete calculator CLI App task using python
+2. complete python To-Do app
+Enter the task number to remove: 1
+Removed task: complete calculator CLI App task using python
+
+Choose an option:
+1. View Tasks
+2. Add Task
+3. Remove Task
+4. Exit
+Enter your choice (1-4): 1
+
+--- TO-DO LIST ---
+1. complete python To-Do app
+
+Choose an option:
+1. View Tasks
+2. Add Task
+3. Remove Task
+4. Exit
+Enter your choice (1-4): 4
+Exiting To-Do App. Goodbye!

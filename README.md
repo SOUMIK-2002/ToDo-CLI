@@ -37,7 +37,7 @@
 
 📁 **ToDo-CLI**  
 ├─ `todo.py` – Main Python CLI Application  
-├─ `tasks.txt` – Auto-generated file to store tasks  
+├─ `tasks.txt` – The output is saved in this file
 └─ `README.md` – This beautiful documentation  
 
 ---

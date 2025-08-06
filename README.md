@@ -1,84 +1,32 @@
-📝# todo.py
+<h1 align="center">📝 To-Do List App - Python CLI</h1>
 
-# File name where tasks will be saved
-FILENAME = "tasks.txt"
+<p align="center">
+A clean and minimal Command Line Interface (CLI) To-Do List App built using Python.  
+Designed as part of a Python Developer Internship task.  
+</p>
 
-# Load tasks from the file
-def load_tasks():
-    try:
-        with open(FILENAME, "r") as file:
-            tasks = [line.strip() for line in file]
-        return tasks
-    except FileNotFoundError:
-        return []
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-blue.svg">
+  <img src="https://img.shields.io/badge/License-MIT-green.svg">
+  <img src="https://img.shields.io/badge/Project-Type-CLI%20App-yellow.svg">
+</p>
 
-# Save tasks to the file
-def save_tasks(tasks):
-    with open(FILENAME, "w") as file:
-        for task in tasks:
-            file.write(task + "\n")
+---
 
-# Display all tasks
-def view_tasks(tasks):
-    print("\n--- TO-DO LIST ---")
-    if not tasks:
-        print("No tasks found.")
-    else:
-        for i, task in enumerate(tasks, start=1):
-            print(f"{i}. {task}")
+## ✨ Features
 
-# Add a new task
-def add_task(tasks):
-    new_task = input("Enter a new task: ").strip()
-    if new_task:
-        tasks.append(new_task)
-        print("Task added successfully.")
-    else:
-        print("Empty task not added.")
+✅ Simple CLI-based interface  
+✅ View, Add, and Remove tasks  
+✅ Tasks are saved persistently in a text file  
+✅ Built using core Python only — no external libraries  
+✅ Easy to run on Windows, Linux, or Mac
 
-# Remove a task by number
-def remove_task(tasks):
-    view_tasks(tasks)
-    if tasks:
-        try:
-            index = int(input("Enter the task number to remove: "))
-            if 1 <= index <= len(tasks):
-                removed = tasks.pop(index - 1)
-                print(f"Removed task: {removed}")
-            else:
-                print("Invalid task number.")
-        except ValueError:
-            print("Please enter a valid number.")
+---
 
-# Show menu
-def show_menu():
-    print("\nChoose an option:")
-    print("1. View Tasks")
-    print("2. Add Task")
-    print("3. Remove Task")
-    print("4. Exit")
+## 📁 Folder Structure
 
-# Main application loop
-def main():
-    tasks = load_tasks()
-    while True:
-        show_menu()
-        choice = input("Enter your choice (1-4): ").strip()
-        if choice == "1":
-            view_tasks(tasks)
-        elif choice == "2":
-            add_task(tasks)
-            save_tasks(tasks)
-        elif choice == "3":
-            remove_task(tasks)
-            save_tasks(tasks)
-        elif choice == "4":
-            save_tasks(tasks)
-            print("Exiting To-Do App. Goodbye!")
-            break
-        else:
-            print("Invalid choice. Please enter 1-4.")
-
-# Run the app
-if __name__ == "__main__":
-    main()
+```bash
+ToDo-CLI/
+├── todo.py        # ✅ Main application file
+├── tasks.txt      # 🗂️ Auto-generated file storing tasks
+└── README.md      # 📘 This documentation
